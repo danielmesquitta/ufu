@@ -1,4 +1,7 @@
 {-
+  Aluno: Daniel Santos de Mesquita
+  Data: 27/07
+
  1) a)
     26 → pois quadrado multiplica 5 por 5, retornando 25
     para inc que soma 1 com 25.
