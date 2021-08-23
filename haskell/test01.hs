@@ -12,8 +12,7 @@
 
     c)
     Erro de tipagem → pois inc retorna inteiros e
-    media recebe floats, mas com a tipagem correta seria feito a media
-    entre 4 e 6 retornando 5.
+    media recebe floats.
 
   2)
 -}
@@ -39,4 +38,4 @@ segundosParaMinutos s = (segundosParaHoras s) * 60
   5)
 -}
 valoresLogicos :: Bool -> Bool -> Bool
-valoresLogicos p q = (p || q) && not(p && q)
+valoresLogicos p q = (p || q) && not (p && q)

@@ -12,6 +12,7 @@ Aluno: Daniel Santos de Mesquita
       saudacaoInfeliz= "Nao pensei que ainda estivesse vivo, "
 
   Reescreva a função corrigindo-a com o uso de expressões guardas.
+
 -}
 saudacao :: String -> String
 saudacao nome

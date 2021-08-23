@@ -18,7 +18,7 @@ terceiro s = head (tail (tail s))
   > ultimo "haskell"
   ’l’
 -}
-ultimo :: String -> Char
+ultimo :: [Char] -> Char
 ultimo s = head (reverse s)
 
 {-
