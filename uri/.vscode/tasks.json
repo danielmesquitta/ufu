@@ -1,0 +1,45 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++ build active file",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/bin/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "detail": "compiler: /usr/bin/g++"
+    },
+    {
+      "type": "cppbuild",
+      "label": "C/C++: g++ build all classes folder files",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-g",
+        "${workspaceFolder}/src/classes/*.cpp",
+        "-o",
+        "${workspaceFolder}/bin/classes"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "isDefault": true,
+        "kind": "build"
+      },
+      "detail": "compiler: /usr/bin/g++"
+    }
+  ]
+}
