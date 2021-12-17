@@ -1,0 +1,36 @@
+html {
+  background-color: #000;
+  font-weight: normal;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+  padding: 16px;
+}
+
+td {
+  border: 1px solid blue;
+}
+
+tr {
+  background-color: pink;
+}
+
+form {
+  padding: 24px;
+}
+
+input {
+  color: red;
+  font-size: 14px;
+}
+
+a {
+  margin: auto;
+  display: block;
+  text-align: center;
+  border: 1px solid gray;
+}

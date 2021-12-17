@@ -1,17 +1,13 @@
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-#include <iostream>
-#include <limits>
-#include <numeric>
-#include <sstream>
-#include <string>
-#include <vector>
+#include <stdio.h>
 
-using namespace std;
+void f(int* p, int m) {
+  m = m + 5;
+  *p = *p + m;
+  return;
+}
 
-int main(int argc, char **argv) {
-  printf("Hello World!\n");
-
-  return 0;
+int main(int argc, char** argv) {
+  int i = 5, j = 10;
+  f(&i, j);
+  printf("%d\n", i + j);
 }
