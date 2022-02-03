@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+form {
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  margin: 0 4px 24px;
+}
+
+form > header {
+  background-color: royalblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+}
+
+form > header > i {
+  display: flex;
+  padding: 8px 12px;
+  color: orange;
+  border-right: 1px solid white;
+}
+
+form > header > span {
+  display: flex;
+  padding: 0 12px;
+}
+
+.form-body {
+  padding: 12px;
+}
+
+.form-body > div {
+  display: flex;
+  padding: 4px 0;
+}
+
+.form-body > div > .label {
+  display: flex;
+  justify-content: flex-end;
+  width: 240px;
+  padding: 4px 12px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-right: 8px;
+  margin-left: 0;
+}
+
+.form-body > div > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.form-body > div > span {
+  justify-content: flex-start;
+  margin-left: 8px;
+}
+
+.form-body > div > input,
+.form-body > div > select {
+  width: 320px;
+}
+
+.form-body > button {
+  display: flex;
+  margin-top: 12px;
+  font-size: 16px;
+  padding: 4px 12px;
+}

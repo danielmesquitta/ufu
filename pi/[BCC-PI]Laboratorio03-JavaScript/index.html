@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>[BCC-PI]Laboratorio03-JavaScript - Daniel Santos de Mesquita</title>
+  </head>
+  <body>
+    <form onsubmit="handleSubmit(event)">
+      <header><i>▶</i> <span>Dados do Titular</span></header>
+
+      <div class="form-body">
+        <div>
+          <label class="label" for="name">Nome Completo*</label>
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div>
+          <span class="label">Sexo*</span>
+
+          <div>
+            <input type="radio" name="gender" value="male" id="male" />
+            <label for="male">Masculino</label>
+
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Feminino</label>
+          </div>
+        </div>
+
+        <div>
+          <label class="label" for="birth">Data de Nascimento*</label>
+
+          <input type="date" name="birth" id="birth" />
+        </div>
+
+        <div>
+          <label class="label" for="cpf">CPF*</label>
+
+          <input id="cpf" name="cpf" type="text" />
+
+          <span>(ex.: 12828741605)</span>
+        </div>
+
+        <div>
+          <label class="label" for="cep">CEP*</label>
+
+          <input id="cep" type="text" name="cep" />
+        </div>
+
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <form>
+      <header><i>▶</i> <span>GeoNames</span></header>
+
+      <div class="form-body">
+        <div>
+          <label class="label" for="country">Seu país:</label>
+
+          <select
+            name="country"
+            id="country"
+            onchange="handleCountryChange(this)"
+          >
+            <option value="">Selecione um país</option>
+            <option value="3469034">Brasil</option>
+            <option value="2593110">Espanha</option>
+            <option value="2593110">Itália</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="label" for="state">Seu estado:</label>
+
+          <select name="state" id="state">
+            <option value="">Selecione um estado</option>
+          </select>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <script src="index.js"></script>
+  </body>
+</html>
